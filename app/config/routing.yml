@@ -1,0 +1,4 @@
+c3_budget:
+    resource: "@C3BudgetBundle/Resources/config/routing.yml"
+    prefix:   /
+
