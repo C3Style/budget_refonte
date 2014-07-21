@@ -10,34 +10,34 @@
 
 <!-- #section:basics/navbar.layout -->
 <div class="help-content">
-    <h3 class="info-title smaller">1. Layout</h3>
+<h3 class="info-title smaller">1. Layout</h3>
 
-    <div class="info-section">
-        <ul class="info-list list-unstyled">
-            <li>
-                Default HTML layout used for navbar is:
-                <div>
+<div class="info-section">
+    <ul class="info-list list-unstyled">
+        <li>
+            Default HTML layout used for navbar is:
+            <div>
 				 <span class="thumbnail inline">
 					<img src="images/navbar.png"/>
 				 </span>
-                </div>
-                <ol>
-                    <li>
-                        <b>toggle buttons</b>: come before brand text container(<code>.navbar-header</code>) or inside
-                        it.
-                    </li>
-                    <li>
-                        <b>.navbar-header</b>: brand text container.
-                    </li>
-                    <li>
-                        <b>.navbar-menu</b>: optional element which contains a menu or form.
-                    </li>
-                    <li>
-                        <b>.navbar-buttons.navbar-header</b>: contains user info buttons and dropdowns.
-                    </li>
-                </ol>
+            </div>
+            <ol>
+                <li>
+                    <b>toggle buttons</b>: come before brand text container(<code>.navbar-header</code>) or inside
+                    it.
+                </li>
+                <li>
+                    <b>.navbar-header</b>: brand text container.
+                </li>
+                <li>
+                    <b>.navbar-menu</b>: optional element which contains a menu or form.
+                </li>
+                <li>
+                    <b>.navbar-buttons.navbar-header</b>: contains user info buttons and dropdowns.
+                </li>
+            </ol>
 
-                <div class="space-4"></div>
+            <div class="space-4"></div>
 <pre data-language="html">
 &lt;div id="navbar" class="navbar navbar-default"&gt;
  &lt;div id="navbar-container" class="navbar-container"&gt;
@@ -63,70 +63,70 @@
  &lt;/div&gt;&lt;!-- /.navbar-container --&gt;
 &lt;/div&gt;&lt;!-- /.navbar --&gt;
 </pre>
-            </li>
+        </li>
 
-            <li>
-                Starting with the following file you can find more details:
-                <br/>
-                <code data-open-file="html" class="open-file"><span class="brief-show">mustache/app/views/layouts/partials/_shared/</span>navbar.mustache</code>
-            </li>
-        </ul>
-        <!-- /.info-list -->
-    </div>
-    <!-- /.info-section -->
+        <li>
+            Starting with the following file you can find more details:
+            <br/>
+            <code data-open-file="html" class="open-file"><span class="brief-show">mustache/app/views/layouts/partials/_shared/</span>navbar.mustache</code>
+        </li>
+    </ul>
+    <!-- /.info-list -->
+</div>
+<!-- /.info-section -->
 
 
-    <h3 class="info-title smaller" data-id="#basics/navbar.mobile">2. Responsive Navbar</h3>
-    <!-- #section:basics/navbar.mobile -->
-    <div class="info-section">
-        <ul class="info-list list-unstyled">
-            <li>
-                There are two styles of responsive (mobile view) navbar:
-                <ol class="spaced">
-                    <li>
-                        Default style in which buttons move down when screen is small and below <b>480px</b>.
-                        <br/>
+<h3 class="info-title smaller" data-id="#basics/navbar.mobile">2. Responsive Navbar</h3>
+<!-- #section:basics/navbar.mobile -->
+<div class="info-section">
+    <ul class="info-list list-unstyled">
+        <li>
+            There are two styles of responsive (mobile view) navbar:
+            <ol class="spaced">
+                <li>
+                    Default style in which buttons move down when screen is small and below <b>480px</b>.
+                    <br/>
 						<span class="thumbnail inline">
 							<img src="images/navbar-mobile1.png"/>
 						</span>
-                        <br/>
-                        You can change this value by modifying <code>@screen-topbar-down</code> variable
-                        at <code>assets/css/less/variables.less</code> and re-compile <code>ace.less</code>.
-                    </li>
-                    <li>
-                        Bootstrap collapse style in which user buttons & dropdowns are hidden and
-                        when screen is below <b>992px</b>, toggle buttons are used to hide/show them.
-                        <br/>
+                    <br/>
+                    You can change this value by modifying <code>@screen-topbar-down</code> variable
+                    at <code>assets/css/less/variables.less</code> and re-compile <code>ace.less</code>.
+                </li>
+                <li>
+                    Bootstrap collapse style in which user buttons & dropdowns are hidden and
+                    when screen is below <b>992px</b>, toggle buttons are used to hide/show them.
+                    <br/>
 						
 						<span class="thumbnail inline">
 							<img src="images/navbar-mobile2.png"/>
 						</span>
 
-                        <br/>
-                        <i class="fa fa-hand-o-right"></i>
-                        You can change <b>992px</b> to something else,
-                        please see the note at <a href="#files/css.bootstrap" class="help-more">CSS section</a>
+                    <br/>
+                    <i class="fa fa-hand-o-right"></i>
+                    You can change <b>992px</b> to something else,
+                    please see the note at <a href="#files/css.bootstrap" class="help-more">CSS section</a>
 
-                        <div class="space-6"></div>
-                        To enable this mobile style:
-                        <ul>
-                            <li>
-                                Add necessary <a href="#basics/navbar.toggle" class="help-more">toggle buttons</a>
-                            </li>
-                            <li>
-                                Add <code>.navbar-collapse</code> class to <code>.navbar</code> element
-                            </li>
-                            <li>
-                                Add <code>.navbar-collapse</code> and <code>.collapse</code>
-                                class to <code>.navbar-buttons</code> element
-                            </li>
+                    <div class="space-6"></div>
+                    To enable this mobile style:
+                    <ul>
+                        <li>
+                            Add necessary <a href="#basics/navbar.toggle" class="help-more">toggle buttons</a>
+                        </li>
+                        <li>
+                            Add <code>.navbar-collapse</code> class to <code>.navbar</code> element
+                        </li>
+                        <li>
+                            Add <code>.navbar-collapse</code> and <code>.collapse</code>
+                            class to <code>.navbar-buttons</code> element
+                        </li>
 
-                            <li>
-                                If there are is a navbar menu or form, you should add <code>.navbar-collapse</code> and
-                                <code>.collapse</code>
-                                class to <code>.navbar-menu</code> element
-                            </li>
-                        </ul>
+                        <li>
+                            If there are is a navbar menu or form, you should add <code>.navbar-collapse</code> and
+                            <code>.collapse</code>
+                            class to <code>.navbar-menu</code> element
+                        </li>
+                    </ul>
 
 
 <pre data-language="html">
@@ -155,54 +155,54 @@
 &lt;/div&gt;&lt;!-- /.navbar --&gt;
 </pre>
 
-                    </li>
-                </ol>
-            </li>
-        </ul>
-        <!-- /.info-list -->
-    </div>
-    <!-- /.info-section -->
-    <!-- /section:basics/navbar.mobile -->
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <!-- /.info-list -->
+</div>
+<!-- /.info-section -->
+<!-- /section:basics/navbar.mobile -->
 
 
-    <h3 class="info-title smaller">3. Navbar options</h3>
+<h3 class="info-title smaller">3. Navbar options</h3>
 
-    <div class="info-section">
-        <ul class="info-list list-unstyled">
-            <li>
-                <ol class="spaced">
-                    <li>
-                        For fixed navbar you should add <code>.navbar-fixed-top</code> class to <code>.navbar</code>
-                        element.
-                        <br/>
-                        See <a href="#settings.page" class="help-more">Page Settings</a> for more info.
-                    </li>
-                    <li>
-                        For navbar inside <b>.container</b> you should add <code>.container</code> class to <code>.navbar-container</code>
-                        element.
-                        <br/>
-                        See <a href="#settings.page" class="help-more">Page Settings</a> for more info.
-                    </li>
-                    <li>
-                        When sidebar is horizontal you should add <code>.h-navbar</code> class to <code>.navbar</code>
-                        element.
-                        <br/>
-                        See <a href="#basics/sidebar.horizontal" class="help-more">Horizontal Menu</a> for more info.
-                    </li>
-                </ol>
-            </li>
-        </ul>
-        <!-- /.info-list -->
-    </div>
-    <!-- /.info-section -->
+<div class="info-section">
+    <ul class="info-list list-unstyled">
+        <li>
+            <ol class="spaced">
+                <li>
+                    For fixed navbar you should add <code>.navbar-fixed-top</code> class to <code>.navbar</code>
+                    element.
+                    <br/>
+                    See <a href="#settings.page" class="help-more">Page Settings</a> for more info.
+                </li>
+                <li>
+                    For navbar inside <b>.container</b> you should add <code>.container</code> class to <code>.navbar-container</code>
+                    element.
+                    <br/>
+                    See <a href="#settings.page" class="help-more">Page Settings</a> for more info.
+                </li>
+                <li>
+                    When sidebar is horizontal you should add <code>.h-navbar</code> class to <code>.navbar</code>
+                    element.
+                    <br/>
+                    See <a href="#basics/sidebar.horizontal" class="help-more">Horizontal Menu</a> for more info.
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <!-- /.info-list -->
+</div>
+<!-- /.info-section -->
 
 
-    <h3 class="info-title smaller" data-id="#basics/navbar.layout.brand">4. Brand</h3>
-    <!-- #section:basics/navbar.layout.brand -->
-    <div class="info-section">
-        <ul class="info-list list-unstyled">
-            <li>
-                Brand text is inside <code>.navbar-header</code> container and has the following markup:
+<h3 class="info-title smaller" data-id="#basics/navbar.layout.brand">4. Brand</h3>
+<!-- #section:basics/navbar.layout.brand -->
+<div class="info-section">
+    <ul class="info-list list-unstyled">
+        <li>
+            Brand text is inside <code>.navbar-header</code> container and has the following markup:
 <pre data-language="html">
  <div class="navbar-header pull-left">
      <a href="#" class="navbar-brand">
@@ -213,12 +213,12 @@
      </a>
  </div>
 </pre>
-            </li>
-        </ul>
-        <!-- /.info-list -->
-    </div>
-    <!-- /.info-section -->
-    <!-- /section:basics/navbar.layout.brand -->
+        </li>
+    </ul>
+    <!-- /.info-list -->
+</div>
+<!-- /.info-section -->
+<!-- /section:basics/navbar.layout.brand -->
 
 </div>
 <!-- /.help-content -->
